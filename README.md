@@ -1,4 +1,4 @@
-A single-page, one-column resume. The three main sections are education, experience, and projects.
+A single-page, one-column resume. The three main sections are experience, skills, and education.
 
 ### Build using PDFLaTeX
 

@@ -6,8 +6,9 @@
 %------------------------
 
 %&pdflatex
+% !TEX root = seth_baird_resume.tex
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[legalpaper,11pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -21,6 +22,7 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \input{glyphtounicode}
+% \usepackage[scale=5]{draftwatermark}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -113,14 +115,14 @@
       %may need date modification
       \resumeItemListStart
         \resumeItem{Computer Sales}
-          {Built and sold over 15 tailored desktop, laptop, and mac computers to end users at different price points and configurations.}
+          {Built and sold more than 15 tailored desktop, laptop, and Mac computers to end users at different price points and configurations.}
         \resumeItem{Part Refurbishment and Sales}
           {Repaired, cleaned, and refurbished parts and sold them to PC builders and end users through Jawa's marketplace.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Self Employed}{Remote - Dallas, TX}
-      {Ebay, local sales}{May 2018 - Present} 
+      {Ebay, local sales}{May 2018 - August 2023} 
       %may need date modification
       \resumeItemListStart
         \resumeItem{Computer Sales and Commissions}
@@ -143,7 +145,7 @@
    \item Completed a 2 semester long course on data structures at a local vocational school
    \item Leveraged Javascript and Typescript to develop a bot using Node.js, Discord.js, and Dotenv
    \item Wrote a document format conversion utility with pyPDF in Python 
-   \item Developed iOS apps with Xcode/Swift in class
+   \item Developed iOS apps with Xcode/Swift and Android apps with Kotlin, inluding imported the use of libraries
    \item Wrote this resume in LaTeX using custom commands
  \end{itemize}
  }
@@ -151,10 +153,10 @@
   \resumeItem{Linux Server Administration}
   {
     \begin{itemize}
-      \item Administrated a network of KVM virtual machines and linux containers through Proxmox
-      \item Used a virtualized instance of TrueNAS Core to create a reliable and high performance general purpose storage array
-      \item Wrote custom bash scripts utilizing cron to schedule full system backups
-      \item Upgraded the hardware to feature more processing threads and memory
+      \item Administrated a network of KVM virtual machines and linux containers (LXC) through Proxmox
+      \item Used a virtualized instance of TrueNAS Core to create a reliable multipurpose storage array
+      \item Assembled two purpose built NAS computers with identical hardware, configured to make encrypted backups to each other over VPN tunnel
+      \item Wrote custom bash scripts utilizing cron to automate full system backups and other maintenance tasks
   \end{itemize}
 }
   \resumeItem{Network Design and Configuration}
@@ -162,17 +164,24 @@
   \begin{itemize}
       \item Leveraged a custom PFSense router for greater speed and customizability
       \item Managed Dell PowerConnect Switches with link aggregation groups to accelerate transfer speeds across the LAN
-      \item Maintained a DNS server with domain filtering to block ads for all clients
-      \item Used static IP addressing to create a easily traversed and efficient network
+      \item Maintained a DNS server with domain filtering to block advertisements for all devices on the network
+  \end{itemize}
+  }
+  \resumeItem{Automotive 12V Installation}
+  {
+  \begin{itemize}
+    \item Installed high fidelity multimedia systems in multiple different vehicles
+    \item Integrated a remote start and alarm system with the existing electrical network 
+    \item Connected smaller accessories like backup cameras, parking sensors, dash cameras, radar detectors, and trunk solenoids to the car's electrical network
   \end{itemize}
   }
   \resumeItem{Microcontroller and IoT}
   {
   \begin{itemize}
     \item Designed arduino code utilizing the Blynk API, linking the hardware to a mobile app
-    \item Reprogrammed, flashed, and burned bootloader code to the ESP8266
-    \item Built the microcontroller and relays into an enclosure for use in a ceiling fan
-    \item Engineered a 3D printer monitoring solution using Octoprint and a Raspberry Pi with camera
+    \item Used a Raspberry Pi Pico with custom Rust code and OpenSCAD-designed hardware to create an arcade style video game controller
+    \item Engineered a ceiling fan controller using a wireless microcontroller and relays
+    \item Installed a 3D printer monitoring solution using Octoprint and a Raspberry Pi with camera
   \end{itemize}
   }
   
@@ -183,14 +192,17 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Memorial High School}{Frisco, Texas}
-      {Senior, Graduating May 2023}{Unweighted GPA 3.81}
+      {Graduated May 2023}{Unweighted GPA 3.81}
       \resumeItemListStart
-        \resumeItem{Noteworthy Classes}
-          {Comp. Sci. 1-3, Mobile App Development, AP Calculus BC, AP Physics C}
-        \resumeItem{AP Scores}
-          {Computer Science: 5/5 ; Calculus BC: Pending ; Physics C: Pending}
+        \resumeItem{Noteworthy Courses Taken}
+          {Comp. Sci. 2 (AP) and 3 (Adv.), Mobile App Development, AP Calculus BC, AP Physics C}
       \resumeItemListEnd
-  \resumeSubHeadingListEnd
+
+      \resumeSubheading
+      {Purdue University}{West Lafayette, Indiana}
+      {Freshman in FYE}{Anticipated graduation May 2027}
+
+      \resumeSubHeadingListEnd
 
 
 %-------------------------------------------

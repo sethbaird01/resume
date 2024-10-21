@@ -35,7 +35,7 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.4in}
+\addtolength{\topmargin}{-.5in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
@@ -56,11 +56,10 @@
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
-    \textbf{#1}{: #2 \vspace{-2pt}}
+    \textbf{#1}{: #2 \vspace{-2.5pt}}
   }
 }
 
-% Just in case someone needs a heading that does not need to be in a list
 \newcommand{\resumeHeading}[4]{
     \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
@@ -135,7 +134,20 @@
 
   \resumeSubHeadingListEnd
 
+%-----------INVOLVEMENT-----------------
+\section{Involvement}
+  \resumeSubHeadingListStart
 
+  \resumeItem{Purdue Electric Racing - Software Team}
+  {
+    \begin{itemize}
+      \vspace{-3pt}
+      \item Developed code for the main module of the car alongside core members of the organization
+      \item Reworked the CAN communication backend to use two busses simultaneously for new high-throughput motors
+      \item Utilized testing equipment such as CANable to verify interoperability of new and existing systems
+  \end{itemize}
+  }
+  \resumeSubHeadingListEnd
 
 % --------PROGRAMMING/IT SKILLS------------
 \section{Programming and IT Skills}
@@ -144,10 +156,11 @@
  \resumeItem{Microcontroller and IoT}
  {
  \begin{itemize}
-   \item Leveraged a Raspberry Pi Pico and OpenSCAD-designed hardware to create an arcade style video game controller
+   \vspace{-3pt}
+   \item Leveraged a Raspberry Pi Pico and OpenSCAD-designed hardware to create an arcade-style video game controller
    \item Designed a ceiling fan controller using a Wi-Fi capable microcontroller, Blynk API, and relays
-   \item Created many interactive circuits in Lab based around the ATMEGA2560 using AVR Studio and pure C
-   \item Installed a 3D printer monitoring solution using Octoprint and a Raspberry Pi with camera
+  %  \item Created many interactive circuits in Lab based around the ATMEGA2560 using AVR Studio and pure C
+   \item Installed a 3D printer monitoring solution using Octoprint, a camera, and a Raspberry Pi
    \item Utilized a custom CMake build system to contribute to Purdue Electric Racing's firmware repository
  \end{itemize}
  }
@@ -155,21 +168,23 @@
  \resumeItem{Computer Science}
  {
  \begin{itemize}
-   \item Worked with Java and OOP at home and in school beginning in 2018, completing multiple courses over the subject
-   \item Completed a 2 semester long course on data structures at a local vocational school
+   \vspace{-3pt}
+   \item Worked with Java and OOP at home and in school beginning in 2018, completing multiple courses in the subject
+   \item Completed a 2 semester-long course on data structures at a local vocational school
   %  \item Leveraged Javascript and Typescript to develop a bot using Node.js, Discord.js, and Dotenv
   %  \item Wrote a document format conversion utility with pyPDF in Python 
-   \item Developed iOS apps with Swift and Android apps with Kotlin, including the use of imported libraries
-  %  \item Created other small personal projects with C, Typescript, Python, and LaTeX
+  %  \item Developed iOS apps with Swift and Android apps with Kotlin, including the use of imported libraries
+   \item Created various personal projects with C, Typescript, and Python such as mobile apps, bots, and file utilities
  \end{itemize}
  }
 
   \resumeItem{Linux Server Administration}
   {
     \begin{itemize}
-      \item Administrated a network of KVM virtual machines and linux containers (LXC) through hypervisor Proxmox
+      \vspace{-3pt}
+      \item Administrated a network of KVM virtual machines and Linux containers (LXC) through hypervisor Proxmox
       % \item Used a virtualized instance of TrueNAS Core to create a reliable multipurpose storage array
-      \item Assembled two purpose built NAS computers with identical hardware, configured to make encrypted backups to each other over VPN tunnel
+      \item Assembled two purpose-built NAS computers with identical hardware, configured to make encrypted backups to each other over a VPN tunnel
       \item Wrote custom bash scripts utilizing cron to automate full system backups and other maintenance tasks
       \item Leveraged a DNS server with domain filtering to block advertisements and malicious sites for all devices on the LAN
   \end{itemize}
@@ -207,7 +222,7 @@
         \resumeItem{Noteworthy Courses Taken}
           {Comp. Sci. 2 (AP) \& 3 (Adv.), iOS Development, AP Calculus BC, AP Physics C}
       \resumeItemListEnd
-      \resumeSubHeadingListEnd
+  \resumeSubHeadingListEnd
 
 
 %-------------------------------------------

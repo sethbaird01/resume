@@ -13,3 +13,4 @@
 .*.lb
 *.synctex.gz
 *.fdb_latexmk
+.vscode/*

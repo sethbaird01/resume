@@ -47,7 +47,7 @@
 % Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -72,7 +72,7 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-3pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
@@ -116,17 +116,18 @@
       {NVIDIA Server Repair Technician}{May 2024 - August 2024} 
       \resumeItemListStart
         \resumeItem{System Repair and Troubleshooting}
-          {Diagnosed, refurbished, repaired, and built NVIDIA HGX 8-GPU units.}
+          {Diagnosed, refurbished, repaired, and built NVIDIA HGX 8-GPU units.} 
         \resumeItem{Hardware Validation and Analysis}
-          {Used proprietary diagnostic tools to gain insight into the operational state of motherboard subsystems such as power delivery, signal integrity, and FPGA.}
-        \resumeItem{Servers and Information Technology}
-          {Daily activities depended on the use of Linux, SSH, tmux, Microsoft Office, as well as strong communication and note-taking skills.}
+          {Used proprietary diagnostic tools to identify errors and discrepancies within motherboard subsystems such as power delivery, signal integrity, and FPGAs before executing a repair.}
+        \resumeItem{Team Workflow Optimization}
+          {Developed a Python script to automate thousands of lines of by-hand data entry into the company's antiquated database, saving my team 80 man-hours per week}
+        % \resumeItem{Servers and Information Technology}
+        %   {Daily activities depended on the use of Linux, SSH, tmux, Microsoft Office, as well as strong communication and note-taking skills.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Jawa.gg}{Remote}
       {Verified Seller}{October 2021 - August 2023} 
-      %may need date modification
       \resumeItemListStart
         \resumeItem{Top 10 Seller in Overall Performance}{Recognized by CEO Amanda Stefan for driving Jawa's growth.}
         \resumeItem{Computer Sales and Commissions}
@@ -137,8 +138,6 @@
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
-
-  \vspace{-11pt}
   
 %-----------INVOLVEMENT-----------------
 \section{Involvement}
@@ -148,56 +147,44 @@
   {
     \begin{itemize}
       \vspace{-5pt}
-      \item Wrote multiple HALs (Hardware abstraction layers) to simplify the codebase and make development easier
+      \item Created multiple HALs (Hardware abstraction layers) to simplify the codebase and make development easier
       \item Reworked the CAN communication backend to use two busses simultaneously for new high-throughput motors
-      \item Utilized testing equipment such as CANable to verify interoperability of new and existing systems
+      \item Utilized testing equipment such as CANable and the oscilloscope's built in signal decoding to verify new hardware
   \end{itemize}
   }
   \vspace{-5pt}
 
   \resumeSubHeadingListEnd
 
-% --------PROGRAMMING/IT SKILLS AND PROJECTS------------
-  \vspace{-9pt}
 
 \section{Skills and Projects}
  \resumeSubHeadingListStart
  
  
-    \resumeItem{Microcontroller, FPGA, and IoT}
+    \resumeItem{Hardware Engineering}
     {
     \begin{itemize}
       \vspace{-5pt}
-      \item Implemented channel scan into a superheterodyne FM radio using regression and a local maximum search algorithm
+      \item Implemented a channel scan algorithm into a hand-built superheterodyne FM radio using DSP and statistics
+      \item Fabricated a Li-ion powered guitar amplifier with a custom case and purpose-built PCBs laid out in KiCad 
       \item Leveraged Solidworks, OpenSCAD, and a Raspberry Pi Pico running Rust to create a replica arcade game controller
       \item Added smart capability to a ceiling fan using an ESP8266 Wi-Fi microcontroller (Arduino C) and the Blynk API
-      % \item Installed a 3D printer monitoring solution using a Raspberry Pi and camera running Octoprint on Linux (Bash)
       \item Designed and simulated logic circuits and HDL code for Altera FPGAs in Quartus. 
     \end{itemize}
     }
    \vspace{-2pt}
 
- \resumeItem{Software Development}
- {
-   \begin{itemize}
-    \vspace{-5pt}
-    \item Developed an android app that integrated with a car's engine computer to provide data and insights to the driver
-    \item Completed a 2 semester long course on data structures at a vocational school before enrollment in university
-    \item Studied OOP in Java at home and vocational school beginning in 2018, completing 3 courses in the subject
-    \item Created over 20 proof-of-concept iOS and Android apps to gain familiarity with Swift and Kotlin
-    \item Leveraged Node.js, Discord.js, and Dotenv to develop an audio capable bot written in Typescript
-  \end{itemize}
-  }
-  \vspace{-3pt}
-
-  \resumeItem{Linux Server Administration}
+  \resumeItem{IT and Software Development}
   {
     \begin{itemize}
      \vspace{-5pt}
-     \item Designed custom bash scripts utilizing cron to automate ZFS dataset replication and other maintenance tasks
-     \item Administrated a network of KVM virtual machines and Linux containers (LXC) under the Proxmox hypervisor
-     \item Configured a DNS server with domain filtering to block advertisements and malicious sites for all LAN clients
-     \item Built a pair of multipurpose storage servers configured to make bidirectional encrypted backups over VPN
+      \item Developed an android app that integrated with a car's engine computer to provide data and insights to the driver
+    \item Created over 20 proof-of-concept iOS and Android apps to gain familiarity with Swift and Kotlin
+
+    %  \item Designed custom bash scripts utilizing cron to automate ZFS dataset replication and other maintenance tasks
+    %  \item Administrated a network of KVM virtual machines and Linux containers (LXC) under the Proxmox hypervisor
+    \item Deployed a bash script using cron to automate bidirectional encrypted data transfer for on- and off-site backups
+     \item Implemented a domain filtering DNS server to block advertisements and malicious sites on all devices
    \end{itemize}
    }
         \vspace{-3pt}
@@ -217,14 +204,14 @@
 
   \resumeSubheading
   {Purdue University}{West Lafayette, Indiana}
-  {In progress - Anticipated Graduation May 2027}{GPA 3.01}
+  {In progress - Anticipated Graduation May 2027}{}
     \vspace{-2pt}
     
-    {\small\textbf{  Major in Computer Engineering Technology}\textsl{ Minor in Computer and Information Technology}}  
+    {\small\textbf{  Major in Computer Engineering Technology}\textsl{ Minor in Information Technology}}  
 
     \resumeSubheading
       {Memorial High School}{Frisco, Texas}
-      {Graduated May 2023}{Unweighted GPA 3.81}
+      {Graduated May 2023}{}
 
     \vspace{4pt}
     

@@ -13,7 +13,6 @@
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
-\usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
@@ -52,7 +51,6 @@
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
-%-------------------------
 % Custom commands
 \newcommand{\resumeItem}[2]{
   \item\small{
@@ -90,27 +88,85 @@
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%-------------------------------------------
-%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \begin{document}
-
-%----------HEADING-----------------
 
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
   & LinkedIn : \href{https://www.linkedin.com/in/seth-baird-8b68b9243/}{seth-baird-8b68b9243} \\
   \textbf{\Large Seth Baird} & Email : \href{mailto:sethbaird01@gmail.com}{sethbaird01@gmail.com}\\
   Mobile : (469) 486-2236 & Github : \href{https://github.com/sethbaird01}{sethbaird01} \\
 \end{tabular*}
+\vspace{-2pt}
 
+\section{Education}
+  \resumeSubHeadingListStart
 
-%-----------EXPERIENCE-----------------
-  \vspace{-2pt}
+  \resumeSubheading
+  {Purdue University}{West Lafayette, Indiana}
+  {Anticipated Graduation May 2027}{}
+    \vspace{-3pt}
+    
+    {\small\textbf{  Major in Computer Engineering Technology}\textsl{ Minor in Information Technology}}  
+
+    \resumeSubheading
+      {Memorial High School}{Frisco, Texas}
+      {Graduated May 2023}{}
+
+    \vspace{4pt}
+    
+    {\small\textbf{  Vocational Education:}\textsl{ CS3: Data Structures and Algorithms, Mobile Application Development}}
+    % \vspace{-12pt}
+
+  \resumeSubHeadingListEnd
+
+\section{Involvement}
+  \resumeSubHeadingListStart
+
+  \resumeItem{Purdue Electric Racing - STM32 Software Team}
+  {
+    \begin{itemize}
+      \vspace{-5pt}
+      \item Created multiple HALs (Hardware abstraction layers) to simplify the codebase and make development easier
+      \item Reworked the CAN communication backend to use two busses simultaneously for new high-throughput motors
+      \item Utilized testing equipment such as CANable and the oscilloscope's built in signal decoding to verify new hardware
+  \end{itemize}
+  }
+
+  \resumeSubHeadingListEnd
+
+\section{Skills and Projects}
+ \resumeSubHeadingListStart
+    \resumeItem{Hardware Engineering}
+    {
+    \begin{itemize}
+      \vspace{-4pt}
+      \item Implemented a channel scan algorithm into a hand-built superheterodyne FM radio using DSP and statistics
+      \item Fabricated a Li-ion powered guitar amplifier with a custom case and purpose-built PCBs laid out in KiCad 
+      \item Leveraged Solidworks, OpenSCAD, and a Raspberry Pi Pico running Rust to create a replica arcade game controller
+      \item Added smart capability to a ceiling fan using an ESP8266 Wi-Fi microcontroller (Arduino C) and the Blynk API
+      \item Designed and simulated logic circuits and HDL code for Altera FPGAs in Quartus. 
+    \end{itemize}
+    }
+   \vspace{-2pt}
+
+  \resumeItem{Software Engineering and Information Technology}
+  {
+    \begin{itemize}
+     \vspace{-5pt}
+      \item Developed an android app that integrated with a car's engine computer to provide data and insights to the driver
+    \item Created over 20 proof-of-concept iOS and Android apps to gain familiarity with Swift and Kotlin
+
+    %  \item Designed custom bash scripts utilizing cron to automate ZFS dataset replication and other maintenance tasks
+    %  \item Administrated a network of KVM virtual machines and Linux containers (LXC) under the Proxmox hypervisor
+    \item Deployed a bash script using cron to automate bidirectional encrypted data transfer for on- and off-site backups
+     \item Implemented a domain filtering DNS server to block advertisements and malicious sites on all devices
+   \end{itemize}
+   }
+
+  \resumeSubHeadingListEnd
 
 \section{Work Experience}
-  \resumeSubHeadingListStart
-  
+\resumeSubHeadingListStart
+
       \resumeSubheading
       {SMS InfoComm (Wistron Corporation)}{Dallas, TX}
       {NVIDIA Server Repair Technician}{May 2024 - August 2024} 
@@ -138,88 +194,5 @@
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
-  
-%-----------INVOLVEMENT-----------------
-\section{Involvement}
-  \resumeSubHeadingListStart
 
-  \resumeItem{Purdue Electric Racing - STM32 Software Team}
-  {
-    \begin{itemize}
-      \vspace{-5pt}
-      \item Created multiple HALs (Hardware abstraction layers) to simplify the codebase and make development easier
-      \item Reworked the CAN communication backend to use two busses simultaneously for new high-throughput motors
-      \item Utilized testing equipment such as CANable and the oscilloscope's built in signal decoding to verify new hardware
-  \end{itemize}
-  }
-  \vspace{-5pt}
-
-  \resumeSubHeadingListEnd
-
-
-\section{Skills and Projects}
- \resumeSubHeadingListStart
- 
- 
-    \resumeItem{Hardware Engineering}
-    {
-    \begin{itemize}
-      \vspace{-5pt}
-      \item Implemented a channel scan algorithm into a hand-built superheterodyne FM radio using DSP and statistics
-      \item Fabricated a Li-ion powered guitar amplifier with a custom case and purpose-built PCBs laid out in KiCad 
-      \item Leveraged Solidworks, OpenSCAD, and a Raspberry Pi Pico running Rust to create a replica arcade game controller
-      \item Added smart capability to a ceiling fan using an ESP8266 Wi-Fi microcontroller (Arduino C) and the Blynk API
-      \item Designed and simulated logic circuits and HDL code for Altera FPGAs in Quartus. 
-    \end{itemize}
-    }
-   \vspace{-2pt}
-
-  \resumeItem{IT and Software Development}
-  {
-    \begin{itemize}
-     \vspace{-5pt}
-      \item Developed an android app that integrated with a car's engine computer to provide data and insights to the driver
-    \item Created over 20 proof-of-concept iOS and Android apps to gain familiarity with Swift and Kotlin
-
-    %  \item Designed custom bash scripts utilizing cron to automate ZFS dataset replication and other maintenance tasks
-    %  \item Administrated a network of KVM virtual machines and Linux containers (LXC) under the Proxmox hypervisor
-    \item Deployed a bash script using cron to automate bidirectional encrypted data transfer for on- and off-site backups
-     \item Implemented a domain filtering DNS server to block advertisements and malicious sites on all devices
-   \end{itemize}
-   }
-        \vspace{-3pt}
-  
-  %   \item Installed high fidelity multimedia systems in multiple different vehicles
-  %   \item Integrated a remote start and alarm system with the existing electrical network 
-  %   \item Connected smaller accessories like backup cameras, parking sensors, dash cameras, radar detectors, and trunk solenoids to the car's electrical network
-  %   \item Installed and fully integrated different 12V automotive accessories such as a remote-start alarm system, A/V head units, parking sensors, dash cameras, and other small electronic devices
-
-  \vspace{-5pt}
-
-  \resumeSubHeadingListEnd
-
-%-----------EDUCATION-----------------
-\section{Education}
-  \resumeSubHeadingListStart
-
-  \resumeSubheading
-  {Purdue University}{West Lafayette, Indiana}
-  {In progress - Anticipated Graduation May 2027}{}
-    \vspace{-2pt}
-    
-    {\small\textbf{  Major in Computer Engineering Technology}\textsl{ Minor in Information Technology}}  
-
-    \resumeSubheading
-      {Memorial High School}{Frisco, Texas}
-      {Graduated May 2023}{}
-
-    \vspace{4pt}
-    
-    {\small\textbf{  Vocational Education:}\textsl{ CS3: Data Structures and Algorithms, Mobile Application Development}}
-    \vspace{-12pt}
-
-  \resumeSubHeadingListEnd
-
-
-%-------------------------------------------
 \end{document}

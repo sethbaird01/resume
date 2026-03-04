@@ -84,16 +84,16 @@
 \renewcommand{\labelitemii}{$\circ$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-12pt}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 \begin{document}
 
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  & LinkedIn : \href{https://www.linkedin.com/in/seth-baird-8b68b9243/}{seth-baird-8b68b9243} \\
-  \textbf{\Large Seth Baird} & Email : \href{mailto:sethbaird01@gmail.com}{sethbaird01@gmail.com}\\
-  Mobile : (469) 486-2236 & Github : \href{https://github.com/sethbaird01}{sethbaird01} \\
+  & LinkedIn and Portfolio: \href{https://www.linkedin.com/in/seth-baird-8b68b9243/}{seth-baird-8b68b9243} \\
+  \textbf{\huge Seth Baird} & Email: \href{mailto:sethbaird01@gmail.com}{sethbaird01@gmail.com}\\
+  Motivated and ambitious full-time student at Purdue University & Github: \href{https://github.com/sethbaird01}{sethbaird01} \\
 \end{tabular*}
 \vspace{-2pt}
 
@@ -103,31 +103,27 @@
   \resumeSubheading
   {Purdue University}{West Lafayette, Indiana}
   {Anticipated Graduation May 2027}{GPA 3.09}
-    \vspace{-3pt}
     
     {\small\textbf{  Major in Computer Engineering Technology}\textsl{ Minor in Information Technology}}  
 
-    \resumeSubheading
-      {Memorial High School}{Frisco, Texas}
-      {Graduated May 2023}{GPA 3.81}
-
-    \vspace{4pt}
-    
+  \resumeSubheading
+    {Memorial High School}{Frisco, Texas}
+    {Graduated May 2023}{GPA 3.81}
+  
     {\small\textbf{  Vocational Education:}\textsl{ CS3: Data Structures and Algorithms, Mobile Application Development}}
-    % \vspace{-12pt}
 
   \resumeSubHeadingListEnd
 
 \section{Involvement}
   \resumeSubHeadingListStart
 
-  \resumeItem{Purdue Electric Racing - STM32 Software Team}
+  \resumeItem{Purdue Electric Racing: Software Team (STM32 Embedded C)}
   {
     \begin{itemize}
-      \vspace{-5pt}
-      \item Developed multiple HALs (Hardware abstraction layers) to simplify the codebase and make development easier
-      \item Reworked the CAN communication backend to use two busses simultaneously for new high-throughput motors
-      \item Utilized testing equipment such as CANable and the oscilloscope's built in signal decoding to test new hardware
+      \vspace{-2pt}
+      \item Developed multiple HALs (hardware abstraction layers) to clean up the codebase and make development easier.
+      \item Reworked the CAN communication backend to use two busses simultaneously for new high-throughput motors.
+      \item Utilized testing equipment such as CANable to verify the hardware, and wrote detailed technical documentation.
   \end{itemize}
   }
 
@@ -135,48 +131,47 @@
 
 \section{Skills and Projects}
  \resumeSubHeadingListStart
-    \resumeItem{Hardware Engineering}
+    \resumeItem{Computer Engineering}
     {
     \begin{itemize}
-      \vspace{-4pt}
-      \item Implemented a channel scan algorithm into my own superheterodyne FM radio using DSP and statistics
-      \item Fabricated a fully custom guitar amplifier with a CAD-drawn case and a purpose-built PCB laid out in KiCad 
-      \item Built industrial control systems hands-on in lab and programmed PLCs using IEC 61131-3 ladder logic in FTDW
-      \item Designed and simulated logic circuits and HDL code for Altera FPGAs in Quartus 
-      \item Leveraged Solidworks, OpenSCAD, and a Raspberry Pi Pico running Rust to create a replica arcade game controller
+      \vspace{-2pt}
+      \item Designed and built a miniature guitar amplifier with a CAD-drawn case and a purpose-built PCB laid out in KiCad. The six-week timeline incorporated essential design tools such as system diagrams, work breakdown structures, specific requirements, functional decomposition, and circuit simulation.
+      \item Modernized an analog superheterodyne FM radio built in lab with automated channel scan, presets, and a display. The implementation used I2C to communicate with the tuning DAC, and DSP to run frequency calculations. 
+      \item Built industrial control systems hands-on in lab and programmed PLCs using the IEC 61131-3 standards.
+      \item Created and simulated concurrent logic circuits and HDL code for Altera FPGAs in Quartus.
+      % \item Leveraged Solidworks, OpenSCAD, Rust, and a Raspberry Pi Pico to create a replica arcade game controller.
     \end{itemize}
     }
    \vspace{-2pt}
 
-  \resumeItem{Software Engineering and Information Technology}
+  \resumeItem{Software Development and Information Technology}
   {
     \begin{itemize}
-     \vspace{-5pt}
-     \item Developed an android app that integrates with a car's engine computer to provide data and insights to the driver
-      
+     \vspace{-2pt}
+     \item Developed an android app that integrated with a car's engine computer to provide data and insights to the driver. Performance was audited and data filtering was employed early on to maintain real-time responsiveness.
+     \item Implemented a local maxima locator algorithm that analyzed a continuous stream of RSSI data to pick out the strongest signals. This was then coupled with quartic regression to create a feedback loop for VCO tuning.  
       %  \item Designed custom bash scripts utilizing cron to automate ZFS dataset replication and other maintenance tasks
       %  \item Administrated a network of KVM virtual machines and Linux containers (LXC) under the Proxmox hypervisor
-      \item Deployed a bash script using cron to automate bidirectional encrypted data transfer for off-site backups over VPN
-      \item Implemented a domain filtering DNS server to block advertisements and malicious sites on all network devices
-      \item Created over 20 proof-of-concept iOS and Android apps to gain familiarity with Swift and Kotlin
+      \item Devised a bidirectional off-site backup solution using a peer-to-peer encrypted tunnel and cron for scheduling.
+      \item Configured a domain filtering DNS server to block advertisements and malicious sites on all network devices.
+      % \item Created over 20 other proof-of-concept iOS and Android apps to gain familiarity with Swift and Kotlin.
     \end{itemize}
    }
 
   \resumeSubHeadingListEnd
 
 \section{Work Experience}
-\resumeSubHeadingListStart
-
+  \resumeSubHeadingListStart 
       \resumeSubheading
       {SMS InfoComm (Wistron Corporation)}{Dallas, TX}
       {NVIDIA Server Repair Technician}{May 2024 - August 2024} 
       \resumeItemListStart
         \resumeItem{System Repair and Troubleshooting}
-          {Diagnosed, refurbished, repaired, and built NVIDIA HGX 8-GPU units.} 
+          {Diagnosed, refurbished, and built NVIDIA HGX 8-GPU units.} 
         \resumeItem{Hardware Validation and Analysis}
           {Used proprietary diagnostic tools to identify errors and discrepancies within motherboard subsystems such as power delivery, signal integrity, and FPGAs before executing a repair.}
         \resumeItem{Team Workflow Optimization}
-          {Developed a Python script to automate thousands of lines of by-hand data entry into the company's antiquated database, saving my team 80 man-hours per week}
+          {Developed a Python script to automate thousands of lines of by-hand data entry into the company's antiquated database, saving my team 80 hours of labor per week.}
         % \resumeItem{Servers and Information Technology}
         %   {Daily activities depended on the use of Linux, SSH, tmux, Microsoft Office, as well as strong communication and note-taking skills.}
       \resumeItemListEnd
@@ -190,7 +185,6 @@
           {Built and sold dozens of tailored desktop, laptop, and Mac computers to end users at different price points and configurations.}
         \resumeItem{Part Refurbishment and Sales}
           {Repaired, tested, and refurbished parts and sold them to PC builders and end users through Jawa's marketplace.}
-          % \item Top 10 seller in overall performance, recognized by CEO Amanda Stefan for driving Jawa's growth.
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd

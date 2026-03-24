@@ -14,12 +14,13 @@
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
 \usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[colorlinks=false,urlbordercolor={0 0 0},pdfborderstyle={/S/U/W 0.5}]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage[T1]{fontenc}
+
 \input{glyphtounicode}
 % \usepackage[scale=5]{draftwatermark}
 
@@ -90,12 +91,14 @@
 
 \begin{document}
 
-\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  & LinkedIn and Portfolio: \href{https://www.linkedin.com/in/seth-baird-8b68b9243/}{seth-baird-8b68b9243} \\
-  \textbf{\huge Seth Baird} & Email: \href{mailto:sethbaird01@gmail.com}{sethbaird01@gmail.com}\\
-  Motivated and ambitious full-time student at Purdue University & Github: \href{https://github.com/sethbaird01}{sethbaird01} \\
+\begin{tabular*}{\textwidth}{p{0.6\textwidth} @{\extracolsep{\fill}} r}
+\huge \textbf{Seth Baird} & 
+\begin{tabular}{l r}
+  LinkedIn: \href{https://www.linkedin.com/in/seth-baird-8b68b9243/}{seth-baird-8b68b9243} \\
+  Email: \href{mailto:sethbaird01@gmail.com}{sethbaird01@gmail.com}\\
+  Github: \href{https://github.com/sethbaird01}{sethbaird01} \\
+\end{tabular} \\
 \end{tabular*}
-\vspace{-2pt}
 
 \section{Education}
   \resumeSubHeadingListStart
@@ -114,57 +117,52 @@
 
   \resumeSubHeadingListEnd
 
-\section{Involvement}
-  \resumeSubHeadingListStart
+% change order depending on job description
+\section{Skills}
+C | STM32 | Firmware Engineering | PLC | FPGA | CAD | PCB Design | Circuit Analysis | Python | Java
 
-  \resumeItem{Purdue Electric Racing: Software Team (STM32 Embedded C)}
-  {
+\section{Projects}
+
     \begin{itemize}
-      \vspace{-2pt}
-      \item Developed multiple HALs (hardware abstraction layers) to clean up the codebase and make development easier.
-      \item Reworked the CAN communication backend to use two busses simultaneously for new high-throughput motors.
-      \item Utilized testing equipment such as CANable to verify the hardware, and wrote detailed technical documentation.
-  \end{itemize}
-  }
 
-  \resumeSubHeadingListEnd
-
-\section{Skills and Projects}
- \resumeSubHeadingListStart
-    \resumeItem{Computer Engineering}
-    {
-    \begin{itemize}
-      \vspace{-2pt}
-      \item Designed and built a miniature guitar amplifier with a CAD-drawn case and a purpose-built PCB laid out in KiCad. The six-week timeline incorporated essential design tools such as system diagrams, work breakdown structures, specific requirements, functional decomposition, and circuit simulation.
-      \item Modernized an analog superheterodyne FM radio built in lab with automated channel scan, presets, and a display. The implementation used I2C to communicate with the tuning DAC, and DSP to run frequency calculations. 
+      \item Designed and built a miniature guitar amplifier with a CAD-drawn case and a purpose-built PCB in six weeks. My team and I simulated the circuit in Multisim and created frequency response curves in lab.
+      % The six-week timeline incorporated essential design tools such as system diagrams, work breakdown structures, specific requirements, functional decomposition, and circuit simulation.
+      \item Modernized an analog superheterodyne FM radio with automated channel scan, presets, and a display. Using a local maxima locator algorithm, it searches the continuous stream of RSSI data for strong signals.
+      % The implementation used I2C to communicate with the tuning DAC, and DSP to run frequency calculations. 
       \item Built industrial control systems hands-on in lab and programmed PLCs using the IEC 61131-3 standards.
       \item Created and simulated concurrent logic circuits and HDL code for Altera FPGAs in Quartus.
       % \item Leveraged Solidworks, OpenSCAD, Rust, and a Raspberry Pi Pico to create a replica arcade game controller.
-    \end{itemize}
-    }
-   \vspace{-2pt}
 
-  \resumeItem{Software Development and Information Technology}
-  {
-    \begin{itemize}
-     \vspace{-2pt}
-     \item Developed an android app that integrated with a car's engine computer to provide data and insights to the driver. Performance was audited and data filtering was employed early on to maintain real-time responsiveness.
-     \item Implemented a local maxima locator algorithm that analyzed a continuous stream of RSSI data to pick out the strongest signals. This was then coupled with quartic regression to create a feedback loop for VCO tuning.  
+     \item Developed an android app that integrates with a car's engine computer to provide insights to the driver. 
+     % Performance was audited and data filtering was employed early on to maintain real-time responsiveness.
+     % This was then coupled with quartic regression to create a feedback loop for VCO tuning.  
       %  \item Designed custom bash scripts utilizing cron to automate ZFS dataset replication and other maintenance tasks
       %  \item Administrated a network of KVM virtual machines and Linux containers (LXC) under the Proxmox hypervisor
-      \item Devised a bidirectional off-site backup solution using a peer-to-peer encrypted tunnel and cron for scheduling.
-      \item Configured a domain filtering DNS server to block advertisements and malicious sites on all network devices.
+      % \item Devised a bidirectional off-site backup solution using a peer-to-peer encrypted tunnel and cron for scheduling.
+      % \item Configured a domain filtering DNS server to block advertisements and malicious sites on all network devices.
       % \item Created over 20 other proof-of-concept iOS and Android apps to gain familiarity with Swift and Kotlin.
     \end{itemize}
-   }
 
-  \resumeSubHeadingListEnd
 
-\section{Work Experience}
+  
+\section{Relevant Coursework}
+Prototyping \& Development | Industrial Controls | Data Structures \& Algorithms | Advanced Embedded Systems 
+
+\section{Experience}
   \resumeSubHeadingListStart 
+
+    \resumeItem{Purdue Electric Racing: Software Team}
+  {
+    \begin{itemize}
+      \vspace{-2pt}
+      \item Reworked the CAN communication backend to use two busses simultaneously for new high-bitrate motors.
+      \item Developed the PWM HAL (hardware abstraction layer) to control onboard variable-speed devices like cooling fans. This allowed the speed to be modulated in two lines instead of 50, allowing for easier addition of new hardware.
+      \item Leveraged specialized testing equipment such as CANable and logic analyzers to verify successful implementation of mission critical systems.
+  \end{itemize}
+  }
       \resumeSubheading
       {SMS InfoComm (Wistron Corporation)}{Dallas, TX}
-      {NVIDIA Server Repair Technician}{May 2024 - August 2024} 
+      {NVIDIA Server Repair Technician}{05/2024 - 08/2024} 
       \resumeItemListStart
         \resumeItem{System Repair and Troubleshooting}
           {Diagnosed, refurbished, and built NVIDIA HGX 8-GPU units.} 
@@ -178,7 +176,7 @@
 
     \resumeSubheading
       {Jawa.gg}{Remote}
-      {Verified Seller}{October 2021 - August 2023} 
+      {Verified Seller}{10/2021 - 08/2023} 
       \resumeItemListStart
         \resumeItem{Top 10 Seller in Overall Performance}{Recognized by CEO Amanda Stefan for driving Jawa's growth.}
         \resumeItem{Computer Sales and Commissions}

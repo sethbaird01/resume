@@ -82,6 +82,16 @@
     \end{tabular*}\vspace{-3pt}
 }
 
+\newcommand{\resumeSubheadingAlt}[5]{
+    \vspace{-1pt}\item
+    \begin{tabular*}{0.96\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      {#3} & \small{\textit{#4}} \\
+      \textit{#5} \\
+    \end{tabular*}\vspace{-3pt}
+
+}
+
 \newcommand{\resumeSubSubheading}[2]{
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
@@ -114,11 +124,13 @@ West Lafayette, IN | (469) 486-2236 | \href{mailto:sethbaird01@gmail.com}{sethba
 \section{Education}
   \resumeSubHeadingListStart
 
-  \resumeSubheading
-  {Purdue University}{West Lafayette, Indiana}
-  {Anticipated Graduation May 2027}{}%GPA 3.09
+  % \resumeSubheading
+  % {Purdue University}{West Lafayette, Indiana}
+  % {Anticipated Graduation May 2027}{}%GPA 3.09
     
-    {\small\textbf{  Bachelor's in Computer Engineering Technology}\textsl{ Minor in Information Technology}}  
+  %   {\small\textbf{  Bachelor's in Computer Engineering Technology}\textsl{ Minor in Information Technology}}  
+
+  \resumeSubheadingAlt{Purdue University}{West Lafayette, Indiana}{Bachelor's in Computer Engineering Technology}{08/2023 - 05/2027}{Minor in Information Technology}
 
   % \resumeSubheading
   %   {Memorial High School}{Frisco, Texas}
@@ -176,7 +188,7 @@ West Lafayette, IN | (469) 486-2236 | \href{mailto:sethbaird01@gmail.com}{sethba
   {
     \begin{itemize}
       \vspace{-2pt}
-      \item Developed a driver companion app to aid in learning how to use a manual transmission.
+      \item Developed a driver companion app to aid in learning how to operate a manual transmission.
             \vspace{-1pt}
 
       \item Aggregated engine parameters (OBD-II PIDs) using MQTT and processed this data within the app.

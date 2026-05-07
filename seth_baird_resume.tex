@@ -55,7 +55,7 @@
 % Custom commands
 \newcommand{\resumeItem}[2]{\vspace{-1pt}
   \item\small{
-    \textbf{#1}{ #2\vspace{-2pt}}
+    \textbf{#1}{ #2\vspace{-1pt}}
   }
 }
 
@@ -63,8 +63,9 @@
   \vspace{-3pt}\item\small{
     \begin{tabular*}{0.96\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & \textit{#2}
-    \end{tabular*}\vspace{-2pt}
+    \end{tabular*}
 }
+\vspace{-5pt}
 }
 
 \newcommand{\resumeHeading}[4]{
@@ -121,6 +122,8 @@ West Lafayette, IN | (469) 486-2236 | \href{mailto:sethbaird01@gmail.com}{sethba
 % \end{tabular} \\
 % \end{tabular*}
 
+\vspace{-2pt}
+
 \section{Education}
   \resumeSubHeadingListStart
 
@@ -153,8 +156,6 @@ West Lafayette, IN | (469) 486-2236 | \href{mailto:sethbaird01@gmail.com}{sethba
       % This was then coupled with quartic regression to create a feedback loop for VCO tuning.  
 
       % % \item Built industrial control systems hands-on in lab and programmed PLCs using the IEC 61131-3 standards.
-      % \item Developed an android app that integrates with a car's engine computer to provide insights to the driver. 
-      % \item Leveraged Solidworks, OpenSCAD, Rust, and a Raspberry Pi Pico to create a replica arcade game controller.
       % \item Created and simulated concurrent logic circuits and HDL code for Altera FPGAs in Quartus.
 
       %  \item Designed custom bash scripts utilizing cron to automate ZFS dataset replication and other maintenance tasks
@@ -164,101 +165,123 @@ West Lafayette, IN | (469) 486-2236 | \href{mailto:sethbaird01@gmail.com}{sethba
       % \item Created over 20 other proof-of-concept iOS and Android apps to gain familiarity with Swift and Kotlin.
     % \end{itemize}
     \resumeSubHeadingListStart
+    \vspace{-1pt}
     \resumeItemWithDate{Guitar Amplifier with Custom PCB}{12/2025}
     {
       \begin{itemize}
-        \vspace{-2pt}
-      \item Engineered and fabricated a miniature guitar amplifier with a CAD-drawn case and a custom PCB in six weeks.
-      \item Simulated the circuit in Multisim and compared the frequency response curve against the one created in lab.
-      \item Directed a small team and utilized system diagrams, functional decomposition, Gantt, and critical path analysis.
-  \end{itemize}
-  }
-  \vspace{-1pt}
-    \resumeItemWithDate{Modernized Superheterodyne FM Radio Receiver}{04/2025}
-  {
-    \begin{itemize}
-      \vspace{-2pt}
-      \item Redesigned an analog superheterodyne FM radio with digital automated channel scan, presets, and a display.
-      \item The implementation used DSP to run frequency calculations and communicated with the tuning DAC over I2C. 
-      \item Extrapolated the characteristics of the VCO using quartic regression over 56 data points and an $R^2$ of 0.9987.
-  \end{itemize}
-  }
-
+        \vspace{-3pt}
+        \item Engineered and fabricated a miniature guitar amplifier with a CAD-drawn case and a custom PCB in six weeks.
+        \item Simulated the circuit in Multisim and compared the frequency response curve against the one created in lab.
+        \item Directed a small team and utilized system diagrams, functional decomposition, Gantt, and critical path analysis.
+      \end{itemize}
+      }
+      \resumeItemWithDate{Modernized Superheterodyne FM Radio Receiver}{04/2025}
+      {
+        \begin{itemize}
+          \vspace{-2pt}
+          \item Redesigned an analog superheterodyne FM radio with digital automated channel scan, presets, and a display.
+          \item The implementation used DSP to run frequency calculations and communicated with the tuning DAC over I2C. 
+          \item Extrapolated the characteristics of the VCO using quartic regression over 56 data points with an $R^2$ of 0.9987.
+        \end{itemize}
+        }
       \resumeItemWithDate{Engine Monitoring Android App}{02/2024}
-  {
-    \begin{itemize}
-      \vspace{-2pt}
-      \item Developed a driver companion app to aid in learning how to operate a manual transmission.
+      {
+        \begin{itemize}
+          \vspace{-2pt}
+          \item Developed a data-driven driver companion app to aid in learning how to operate a manual transmission.
+          \vspace{-1pt}
+          \item Aggregated engine parameters (OBD-II PIDs) over MQTT and processed this data within the app.
+        \end{itemize}
+        }
+        \resumeItemWithDate{Replica Arcade Controller}{11/2022}
+        {
+          \begin{itemize}
+            \vspace{-2pt}
+            \item Deployed a Raspberry Pi Pico in gadget mode running rust firmware to handle user inputs and transmit it back.
+            \item Designed the HID hardware in OpenSCAD, allowing 4 variations of a part to be defined in a single file.
             \vspace{-1pt}
-
-      \item Aggregated engine parameters (OBD-II PIDs) using MQTT and processed this data within the app.
-  \end{itemize}
-  }
-
-      \resumeItemWithDate{Replica Arcade Controller}{11/2022}
-  {
-    \begin{itemize}
-      \vspace{-2pt}
-      \item Designed the HID hardware in OpenSCAD, allowing 4 variations of a part to be defined in a single file.
-      \vspace{-1pt}
-      \item Deployed a Raspberry Pi Pico in gadget mode running rust firmware to handle user inputs and transmit it back.
-  \end{itemize}
-  }
+          \end{itemize}
+          }
+      
+        
 
 \resumeSubHeadingListEnd
 
 % change order depending on job description
 \section{Skills}
-C | Java | Python | Embedded Systems | RTOS | Linux | CAD | PCB Design | PLC | ISO 26262 | IEC 61131-3
+C | Java | Python | Embedded Systems | FreeRTOS | CAD | PCB Design | Soldering \& Rework | Diagnostics
 
-
+\vspace{-2pt}
 % Skill categories in order of relevance:
 % Languages: C, Java, Python
 % Software/platforms: RTOS, STM32, Linux, Arduino, Git, OpenSCAD, SolidWorks,
-% Concepts (keywords): Firmware, Embedded Systems, Real-time
+% Concepts (keywords): Firmware, Embedded Systems, Real-time, FPGA, Mobile App Development 
 % Standards: ISO 26262 (Automotive), IEC 61131-3 (PLC)
 
 \section{Experience}
   \resumeSubHeadingListStart 
 
-    \resumeItem{Purdue Electric Racing: Software Team}
-  {
-    \begin{itemize}
-      \vspace{-4pt}
-      \item Enhanced the vehicle's CANbus architecture by using two buses simultaneously for new high-speed motors.
-      \item Developed the PWM HAL (hardware abstraction layer) to control onboard variable-speed devices like cooling fans. This made it possible to modulate the speed in two lines instead of 50, promoting easier addition of new hardware.
-      \item Leveraged specialized signal analysis equipment such as CANable and logic analyzers to verify the stability of safety-critical systems.
-  \end{itemize}
-  }
+        \resumeSubheading
+      {Purdue Electric Racing}{West Lafayette, IN}
+      {STM32 Embedded Software Team}{09/2024 - 12/2025} 
+      \resumeItemListStart
+      \vspace{-1pt}
+      \resumeItem{Register-level Programming}
+        {Developed the PWM HAL (hardware abstraction layer) to control onboard variable-speed devices like cooling fans. This made it possible to modulate the speed in two lines instead of 50.}
+        \resumeItem{Lab Bench Testing}
+        {Leveraged oscilloscopes, logic analyzers, and specialized testing equipment such as CANable to verify the stability of safety-critical systems and communication channels.}
+        % Implemented the PWM HAL alongside an oscilloscope for rapid debugging.}
+        \resumeItem{Embedded Architecture}
+        {Refined the vehicle's CAN layout by identifying a major communication bottleneck and ultimately relegating high-throughput motor commands to a separate network.} 
+        % {Identified a major bottleneck in the CAN architecture and refactored the on-vehicle network}
+        % {Resolved a critical communications bottleneck by implementing dual CAN channels.}
+        % \resumeItem{System Integration}
+        %   {Collaborated closely with other teams to ensure cohesion and total system interoperability.} 
+        \resumeItemListEnd
+
       \resumeSubheading
-      {SMS InfoComm (Wistron Corporation)}{Dallas, TX}
+      {SMS InfoComm Corporation (Wistron)}{Dallas, TX}
       {NVIDIA Server Repair Technician}{05/2024 - 08/2024} 
       \resumeItemListStart
         \resumeItem{System Repair and Troubleshooting}
-          {Diagnosed, refurbished, and built NVIDIA HGX 8-GPU units.} 
+          {Diagnosed, refurbished, and assembled NVIDIA HGX 8-GPU units.} 
         \resumeItem{Hardware Validation and Analysis}
           {Utilized proprietary diagnostic tools to identify errors and discrepancies within motherboard subsystems such as power delivery, signal integrity, and FPGAs before executing a repair.}
         \resumeItem{Team Workflow Optimization}
-          {Developed a Python script to automate thousands of lines of by-hand data entry into the company's antiquated database, saving my team 80 hours of labor per week.}
+          {Developed a Python script to automate thousands of lines of manual data entry into the company's antiquated database, saving my team \$1,400 per week.} % 80 hours of labor
         % \resumeItem{Servers and Information Technology}
         %   {Daily activities depended on the use of Linux, SSH, tmux, Microsoft Office, as well as strong communication and note-taking skills.}
       \resumeItemListEnd
 
+      \vspace{-2pt}
     \resumeSubheading
       {Jawa.gg}{Remote}
       {Verified Seller}{10/2021 - 08/2023} 
       \resumeItemListStart
         \resumeItem{Top 10 Seller in Overall Performance}{Recognized by CEO Amanda Stefan for driving Jawa's growth.}
-        \resumeItem{Computer Sales and Commissions}
-          {Built and sold dozens of tailored desktop, laptop, and Mac computers to end users at different price points and configurations.}
-        \resumeItem{Part Refurbishment and Sales}
-          {Repaired, tested, and refurbished parts and sold them to PC builders and end users through Jawa's marketplace.}
+        \resumeItem{Advanced Diagnostics}{Analyzed schematics and BoardView files to diagnose deeper hardware issues, then performed board-level repairs using a BGA rework station and hand-soldering.}
+        % \resumeItem{Refurbishment \& Commissions}
+        % {Built and sold dozens of tailored desktop, laptop, and Mac computers to end users at different price points and configurations.}
+        % \resumeItem{Part Refurbishment and Sales}
+        %   {Repaired, tested, and refurbished parts and sold them to PC builders and end users through Jawa's marketplace.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
   
 \section{Relevant Coursework}
- Advanced Embedded Systems | Prototyping \& Development | Industrial Controls | Data Structures \& Algorithms
+Advanced Embedded Systems | DC \& Pulse Electronics | Prototyping \& Development | DAQ \& Systems Control
+
+%  C Programming (CS159)
+%  DAQ \& Systems Control (ECET177)
+%  Digital Systems (ECET179)
+%  Systems Development (CNIT180)
+%  DC And Pulse Electronics (ECET227)
+%  Concurrent Digital Systems (ECET229)
+%  Wireless Communications (ECET274)
+%  Electronics Prototyping \& Development (ECET270)
+%  Advanced Embedded Digital Systems (ECET329)
+%  Information Technology Architectures (CNIT176)
+%  Industrial Controls (ECET30201)
 
 
 \end{document}

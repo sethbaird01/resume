@@ -166,6 +166,24 @@ West Lafayette, IN | (469) 486-2236 | \href{mailto:sethbaird01@gmail.com}{sethba
     % \end{itemize}
     \resumeSubHeadingListStart
     \vspace{-1pt}
+    \resumeItemWithDate{Modernized Superheterodyne FM Radio Receiver}{04/2025}
+    {
+      \begin{itemize}
+        \vspace{-2pt}
+        \item Redesigned an analog superheterodyne FM radio with digital automated channel scan, presets, and a display.
+        \item Extrapolated the characteristics of the VCO using quartic regression over 56 data points with an $R^2$ of 0.9987.
+        \item The implementation used DSP to run frequency calculations and communicated with the tuning DAC over I2C. 
+      \end{itemize}
+      }
+      \resumeItemWithDate{Engine Monitoring Android App}{02/2024}
+      {
+        \begin{itemize}
+          \vspace{-2pt}
+          \item Developed a data-driven driver companion app to aid in learning how to operate a manual transmission.
+          \vspace{-1pt}
+          \item Aggregated engine sensor parameters (OBD-II PIDs) over MQTT and processed this data within the app.
+        \end{itemize}
+        }
     \resumeItemWithDate{Guitar Amplifier with Custom PCB}{12/2025}
     {
       \begin{itemize}
@@ -175,33 +193,15 @@ West Lafayette, IN | (469) 486-2236 | \href{mailto:sethbaird01@gmail.com}{sethba
         \item Directed a small team and utilized system diagrams, functional decomposition, Gantt, and critical path analysis.
       \end{itemize}
       }
-      \resumeItemWithDate{Modernized Superheterodyne FM Radio Receiver}{04/2025}
+      \resumeItemWithDate{Replica Arcade Controller}{11/2022}
       {
         \begin{itemize}
           \vspace{-2pt}
-          \item Redesigned an analog superheterodyne FM radio with digital automated channel scan, presets, and a display.
-          \item The implementation used DSP to run frequency calculations and communicated with the tuning DAC over I2C. 
-          \item Extrapolated the characteristics of the VCO using quartic regression over 56 data points with an $R^2$ of 0.9987.
-        \end{itemize}
-        }
-      \resumeItemWithDate{Engine Monitoring Android App}{02/2024}
-      {
-        \begin{itemize}
-          \vspace{-2pt}
-          \item Developed a data-driven driver companion app to aid in learning how to operate a manual transmission.
+          \item Deployed Rust code on a Raspberry Pi Pico in gadget mode to handle user inputs and transmit it back over USB.
+          \item Designed the HID hardware in OpenSCAD, allowing 4 variations of a part to be defined in a single file.
           \vspace{-1pt}
-          \item Aggregated engine parameters (OBD-II PIDs) over MQTT and processed this data within the app.
         \end{itemize}
         }
-        \resumeItemWithDate{Replica Arcade Controller}{11/2022}
-        {
-          \begin{itemize}
-            \vspace{-2pt}
-            \item Deployed a Raspberry Pi Pico in gadget mode running rust firmware to handle user inputs and transmit it back.
-            \item Designed the HID hardware in OpenSCAD, allowing 4 variations of a part to be defined in a single file.
-            \vspace{-1pt}
-          \end{itemize}
-          }
       
         
 
@@ -209,7 +209,7 @@ West Lafayette, IN | (469) 486-2236 | \href{mailto:sethbaird01@gmail.com}{sethba
 
 % change order depending on job description
 \section{Skills}
-C | Java | Python | Embedded Systems | FreeRTOS | CAD | PCB Design | Soldering \& Rework | Diagnostics
+C | Java | Python | Embedded Systems | HAL | RTOS | Sensor Fusion | PCB Design | STM32 | FPGA
 
 \vspace{-2pt}
 % Skill categories in order of relevance:
@@ -223,7 +223,7 @@ C | Java | Python | Embedded Systems | FreeRTOS | CAD | PCB Design | Soldering \
 
         \resumeSubheading
       {Purdue Electric Racing}{West Lafayette, IN}
-      {STM32 Embedded Software Team}{09/2024 - 12/2025} 
+      {STM32 Embedded Software Team Member}{09/2024 - 12/2025} 
       \resumeItemListStart
       \vspace{-1pt}
       \resumeItem{Register-level Programming}
@@ -240,23 +240,23 @@ C | Java | Python | Embedded Systems | FreeRTOS | CAD | PCB Design | Soldering \
         \resumeItemListEnd
 
       \resumeSubheading
-      {SMS InfoComm Corporation (Wistron)}{Dallas, TX}
-      {NVIDIA Server Repair Technician}{05/2024 - 08/2024} 
+      {Wistron}{Dallas, TX}
+      {NVIDIA Enterprise Technician}{05/2024 - 08/2024} 
       \resumeItemListStart
-        \resumeItem{System Repair and Troubleshooting}
-          {Diagnosed, refurbished, and assembled NVIDIA HGX 8-GPU units.} 
-        \resumeItem{Hardware Validation and Analysis}
-          {Utilized proprietary diagnostic tools to identify errors and discrepancies within motherboard subsystems such as power delivery, signal integrity, and FPGAs before executing a repair.}
-        \resumeItem{Team Workflow Optimization}
-          {Developed a Python script to automate thousands of lines of manual data entry into the company's antiquated database, saving my team \$1,400 per week.} % 80 hours of labor
-        % \resumeItem{Servers and Information Technology}
+      \resumeItem{Validation and Analysis}
+      {Utilized proprietary diagnostic tools to identify errors and discrepancies within motherboard subsystems such as power delivery, signal integrity, and FPGA before executing a repair.}
+      \resumeItem{Team Workflow Optimization}
+      {Developed a Python script to automate thousands of lines of manual data entry into the company's antiquated database daily, saving my team 80 hours per week.}
+      \resumeItem{Repair and Troubleshooting}
+        {Diagnosed, refurbished, and assembled NVIDIA HGX 8-GPU baseboards.} 
+      % \resumeItem{Servers and Information Technology}
         %   {Daily activities depended on the use of Linux, SSH, tmux, Microsoft Office, as well as strong communication and note-taking skills.}
       \resumeItemListEnd
 
       \vspace{-2pt}
     \resumeSubheading
       {Jawa.gg}{Remote}
-      {Verified Seller}{10/2021 - 08/2023} 
+      {Verified Seller (PCs and Components)}{10/2021 - 08/2023} 
       \resumeItemListStart
         \resumeItem{Top 10 Seller in Overall Performance}{Recognized by CEO Amanda Stefan for driving Jawa's growth.}
         \resumeItem{Advanced Diagnostics}{Analyzed schematics and BoardView files to diagnose deeper hardware issues, then performed board-level repairs using a BGA rework station and hand-soldering.}
@@ -269,7 +269,7 @@ C | Java | Python | Embedded Systems | FreeRTOS | CAD | PCB Design | Soldering \
   \resumeSubHeadingListEnd
   
 \section{Relevant Coursework}
-Advanced Embedded Systems | DC \& Pulse Electronics | Prototyping \& Development | DAQ \& Systems Control
+Advanced Embedded Systems | Concurrent Digital Systems | Data Structures \& Algorithms | RF Comms.
 
 %  C Programming (CS159)
 %  DAQ \& Systems Control (ECET177)

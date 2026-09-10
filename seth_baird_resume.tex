@@ -8,7 +8,7 @@
 %&pdflatex
 % !TEX root = seth_baird_resume.tex
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -22,266 +22,177 @@
 \usepackage[T1]{fontenc}
 
 \input{glyphtounicode}
-% \usepackage[scale=5]{draftwatermark}
 
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \setlength{\footskip}{4.1pt}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.6in}
-\addtolength{\textheight}{0.9in}
+\addtolength{\oddsidemargin}{-0.58in}
+\addtolength{\evensidemargin}{-0.58in}
+\addtolength{\textwidth}{1.16in}
+\addtolength{\topmargin}{-.72in}
+\addtolength{\textheight}{1.32in}
 
 \urlstyle{same}
-
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+  \vspace{-4pt}\scshape\raggedright\normalsize
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
-
-% Custom commands
-\newcommand{\resumeItem}[2]{\vspace{-1pt}
-  \item\small{
-    \textbf{#1}{ #2\vspace{-1pt}}
-  }
-}
-
-\newcommand{\resumeItemWithDate}[2]{
-  \vspace{-3pt}\item\small{
-    \begin{tabular*}{0.96\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textit{#2}
-    \end{tabular*}
-}
-\vspace{-5pt}
-}
-
-\newcommand{\resumeHeading}[4]{
-    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-5pt}
-}
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-1pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-3pt}
-}
-
-\newcommand{\resumeSubheadingAlt}[5]{
-    \vspace{-1pt}\item
-    \begin{tabular*}{0.96\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      {#3} & \small{\textit{#4}} \\
-      \textit{#5} \\
-    \end{tabular*}\vspace{-3pt}
-
-}
-
-\newcommand{\resumeSubSubheading}[2]{
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-5pt}
 }
 
-\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+\newcommand{\resumeProject}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}}
+}
 
 \renewcommand{\labelitemii}{$\circ$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{-12pt}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in,label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.18in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-7pt}}
 
 \begin{document}
 
-% \begin{tabular*}{\textwidth}{p{0.6\textwidth} @{\extracolsep{\fill}} r}
-{\huge\textbf{Seth Baird}} 
-\vspace{4pt}
-\newline
-West Lafayette, IN | (469) 486-2236 | \href{mailto:sethbaird01@gmail.com}{sethbaird01@gmail.com} | \href{https://www.linkedin.com/in/sethbaird01/}{linkedin.com/in/sethbaird01}
-% \begin{tabular}{l r}
-%   LinkedIn: \href{https://www.linkedin.com/in/seth-baird-8b68b9243/}{seth-baird-8b68b9243} \\
-%   Email: \href{mailto:sethbaird01@gmail.com}{sethbaird01@gmail.com}\\
-%   Github: \href{https://github.com/sethbaird01}{sethbaird01} \\
-% \end{tabular} \\
-% \end{tabular*}
+{\huge \textbf{Seth Baird}} \\
+West Lafayette, IN $|$ (469) 486-2236 $|$ \href{mailto:sethbaird01@gmail.com}{sethbaird01@gmail.com} $|$ 
+\href{https://linkedin.com/in/sethbaird01}{linkedin.com/in/sethbaird01}
 
-\vspace{-2pt}
+\vspace{-6pt}
 
 \section{Education}
-  \resumeSubHeadingListStart
+\resumeSubHeadingListStart
 
-  % \resumeSubheading
-  % {Purdue University}{West Lafayette, Indiana}
-  % {Anticipated Graduation May 2027}{}%GPA 3.09
-    
-  %   {\small\textbf{  Bachelor's in Computer Engineering Technology}\textsl{ Minor in Information Technology}}  
+\resumeSubheading
+{Purdue University}{West Lafayette, IN}
+{B.Sc. Computer Engineering Technology, Minor in Information Technology}{08/2023 -- 05/2027}
 
-  \resumeSubheadingAlt{Purdue University}{West Lafayette, Indiana}{Bachelor's in Computer Engineering Technology}{08/2023 - 05/2027}{Minor in Information Technology}
-
-  % \resumeSubheading
-  %   {Memorial High School}{Frisco, Texas}
-  %   {Graduated May 2023}{GPA 3.81}
-  
-  %   {\small\textbf{  Vocational Education:}\textsl{ CS3: Data Structures and Algorithms, Mobile Application Development}}
-
-  \resumeSubHeadingListEnd
-
-\section{Projects}
-
-    % \begin{itemize}
-
-      % \item Designed and built a miniature guitar amplifier with a CAD-drawn case and a purpose-built PCB in six weeks. My team and I simulated the circuit in Multisim and created frequency response curves in lab.
-      % % The six-week timeline incorporated essential design tools such as system diagrams, work breakdown structures, specific requirements, functional decomposition, and circuit simulation.
-
-      % \item Modernized an analog superheterodyne FM radio with automated channel scan, presets, and a display. Using a local maxima locator algorithm, it searches the continuous stream of RSSI data for strong signals.
-      % % The implementation used I2C to communicate with the tuning DAC, and DSP to run frequency calculations. 
-      % Performance was audited and data filtering was employed early on to maintain real-time responsiveness.
-      % This was then coupled with quartic regression to create a feedback loop for VCO tuning.  
-
-      % % \item Built industrial control systems hands-on in lab and programmed PLCs using the IEC 61131-3 standards.
-      % \item Created and simulated concurrent logic circuits and HDL code for Altera FPGAs in Quartus.
-
-      %  \item Designed custom bash scripts utilizing cron to automate ZFS dataset replication and other maintenance tasks
-      %  \item Administrated a network of KVM virtual machines and Linux containers (LXC) under the Proxmox hypervisor
-      % \item Devised a bidirectional off-site backup solution using a peer-to-peer encrypted tunnel and cron for scheduling.
-      % \item Configured a domain filtering DNS server to block advertisements and malicious sites on all network devices.
-      % \item Created over 20 other proof-of-concept iOS and Android apps to gain familiarity with Swift and Kotlin.
-    % \end{itemize}
-    \resumeSubHeadingListStart
-    \vspace{-1pt}
-    \resumeItemWithDate{Modernized Superheterodyne FM Radio Receiver}{04/2025}
-    {
-      \begin{itemize}
-        \vspace{-2pt}
-        \item Redesigned an analog superheterodyne FM radio with digital automated channel scan, presets, and a display.
-        \item Extrapolated the characteristics of the VCO using quartic regression over 56 data points with an $R^2$ of 0.9987.
-        \item The implementation used DSP to run frequency calculations and communicated with the tuning DAC over I2C. 
-      \end{itemize}
-      }
-      \resumeItemWithDate{Engine Monitoring Android App}{02/2024}
-      {
-        \begin{itemize}
-          \vspace{-2pt}
-          \item Developed a data-driven driver companion app to aid in learning how to operate a manual transmission.
-          \vspace{-1pt}
-          \item Aggregated engine sensor parameters (OBD-II PIDs) over MQTT and processed this data within the app.
-        \end{itemize}
-        }
-    \resumeItemWithDate{Guitar Amplifier with Custom PCB}{12/2025}
-    {
-      \begin{itemize}
-        \vspace{-3pt}
-        \item Engineered and fabricated a miniature guitar amplifier with a CAD-drawn case and a custom PCB in six weeks.
-        \item Simulated the circuit in Multisim and compared the frequency response curve against the one created in lab.
-        \item Directed a small team and utilized system diagrams, functional decomposition, Gantt, and critical path analysis.
-      \end{itemize}
-      }
-      \resumeItemWithDate{Replica Arcade Controller}{11/2022}
-      {
-        \begin{itemize}
-          \vspace{-2pt}
-          \item Deployed Rust code on a Raspberry Pi Pico in gadget mode to handle user inputs and transmit it back over USB.
-          \item Designed the HID hardware in OpenSCAD, allowing 4 variations of a part to be defined in a single file.
-          \vspace{-1pt}
-        \end{itemize}
-        }
-      
-        
+\resumeItemListStart
+\resumeItem{Researching with SoCET: Developing our custom trace-scheduling compiler for the in-house VLIW AI Accelerator SoC "Atalla".}
+\resumeItem{Completed all embedded programming coursework in degree path and audited advanced CS and ECE courses beyond curriculum requirements including Data Structures \& Algorithms and a graduate-level Compiler Design course.}
+\resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
-% change order depending on job description
-\section{Skills}
-C | Java | Python | Embedded Systems | HAL | RTOS | Sensor Fusion | PCB Design | STM32 | FPGA
+\vspace{-7pt}
 
-\vspace{-2pt}
-% Skill categories in order of relevance:
-% Languages: C, Java, Python
-% Software/platforms: RTOS, STM32, Linux, Arduino, Git, OpenSCAD, SolidWorks,
-% Concepts (keywords): Firmware, Embedded Systems, Real-time, FPGA, Mobile App Development 
-% Standards: ISO 26262 (Automotive), IEC 61131-3 (PLC)
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProject{Modernized Superheterodyne FM Radio Receiver}{04/2025}
+\resumeItemListStart
+\resumeItem{Engineered embedded C firmware around an Arduino Mega to digitally tune a fully analog superheterodyne FM receiver using an I2C 12-bit DAC, ADC RSSI feedback, EEPROM station storage, and LCD interface.}
+\resumeItem{Implemented a DSP-assisted channel scan algorithm that computed RF noise floor, identified RSSI peaks, and auto-locked onto stations through progressively finer frequency sweeps across the 88--108\,MHz FM band.}
+\resumeItem{Characterized VCO behavior using quartic regression across 56 measured data points, achieving an $R^2$ of 0.9987 and enabling highly accurate digital frequency estimation and automatic station calibration.}
+\resumeItemListEnd
+
+\resumeProject{Embedded Sensor Control + BLE Interface}{04/2026}
+\resumeItemListStart
+\resumeItem{Built a closed-loop embedded control system using a Raspberry Pi Pico, MOSFET/BJT analog driver circuitry, and MicroPython PID firmware to regulate thermal output in real time.}
+\resumeItem{Integrated Bluetooth Low Energy (BLE) serial communication for wireless setpoint configuration and live telemetry streaming, enabling rapid hardware validation and debugging during bench testing.}
+\resumeItem{Performed bring-up and verification of mixed-signal circuitry including transistor driver stages and sensor feedback loops.}
+\resumeItemListEnd
+
+\resumeProject{Industrial Control Systems + PLC Development}{09/2025}
+\resumeItemListStart
+\resumeItem{Built industrial automation systems using IEC 61131-3 standards across Phoenix Contact and Allen-Bradley PLC platforms.}
+\resumeItem{Designed and simulated operator HMIs prior to deployment using PLCnext Engineer, FactoryTalk Design Workbench, and Studio5000 to validate control logic and reduce integration errors.}
+\resumeItem{Applied real-time systems concepts through FreeRTOS task scheduling labs and concurrent FPGA/HDL simulations in Quartus to strengthen embedded debugging and hardware-software integration skills.}
+\resumeItemListEnd
+
+\resumeProject{Engine Monitoring Android App}{02/2024}
+\resumeItemListStart
+\resumeItem{Built an Android driver-assistance app that streamed OBD-II telemetry over MQTT and computed real-time drivetrain insights from engine sensor data.}
+\resumeItem{Derived current transmission gear mathematically from engine RPM, vehicle speed, and final drive ratios when no direct PID was available from the ECU.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-8pt}
+
 
 \section{Experience}
-  \resumeSubHeadingListStart 
+\resumeSubHeadingListStart
 
-        \resumeSubheading
-      {Purdue Electric Racing}{West Lafayette, IN}
-      {STM32 Embedded Software Team Member}{09/2024 - 12/2025} 
-      \resumeItemListStart
-      \vspace{-1pt}
-      \resumeItem{Register-level Programming}
-        {Developed the PWM HAL (hardware abstraction layer) to control onboard variable-speed devices like cooling fans. This made it possible to modulate the speed in two lines instead of 50.}
-        \resumeItem{Lab Bench Testing}
-        {Leveraged oscilloscopes, logic analyzers, and specialized testing equipment such as CANable to verify the stability of safety-critical systems and communication channels.}
-        % Implemented the PWM HAL alongside an oscilloscope for rapid debugging.}
-        \resumeItem{Embedded Architecture}
-        {Refined the vehicle's CAN layout by identifying a major communication bottleneck and ultimately relegating high-throughput motor commands to a separate network.} 
-        % {Identified a major bottleneck in the CAN architecture and refactored the on-vehicle network}
-        % {Resolved a critical communications bottleneck by implementing dual CAN channels.}
-        % \resumeItem{System Integration}
-        %   {Collaborated closely with other teams to ensure cohesion and total system interoperability.} 
-        \resumeItemListEnd
+\resumeSubheading
+{Purdue Electric Racing}{West Lafayette, IN}
+{Embedded Systems Team Member}{09/2024 -- 12/2025}
 
-      \resumeSubheading
-      {Wistron}{Dallas, TX}
-      {NVIDIA Enterprise Technician}{05/2024 - 08/2024} 
-      \resumeItemListStart
-      \resumeItem{Validation and Analysis}
-      {Utilized proprietary diagnostic tools to identify errors and discrepancies within motherboard subsystems such as power delivery, signal integrity, and FPGA before executing a repair.}
-      \resumeItem{Team Workflow Optimization}
-      {Developed a Python script to automate thousands of lines of manual data entry into the company's antiquated database daily, saving my team 80 hours per week.}
-      \resumeItem{Repair and Troubleshooting}
-        {Diagnosed, refurbished, and assembled NVIDIA HGX 8-GPU baseboards.} 
-      % \resumeItem{Servers and Information Technology}
-        %   {Daily activities depended on the use of Linux, SSH, tmux, Microsoft Office, as well as strong communication and note-taking skills.}
-      \resumeItemListEnd
+\resumeItemListStart
+\resumeItem{Architected a register-level PWM HAL for STM32 vehicle subsystems, reducing fan-control implementation from \textasciitilde40 lines to 2 while improving firmware reuse and maintainability.}
+\resumeItem{Validated CAN, PWM, and sensor communication reliability using oscilloscopes, logic analyzers, and CANable adapters on safety-critical automotive systems.}
+\resumeItem{Refined vehicle CAN topology by isolating high-throughput motor traffic onto a dedicated network to improve bus stability.}
+\resumeItemListEnd
 
-      \vspace{-2pt}
-    \resumeSubheading
-      {Jawa.gg}{Remote}
-      {Verified Seller (PCs and Components)}{10/2021 - 08/2023} 
-      \resumeItemListStart
-        \resumeItem{Top 10 Seller in Overall Performance}{Recognized by CEO Amanda Stefan for driving Jawa's growth.}
-        \resumeItem{Advanced Diagnostics}{Analyzed schematics and BoardView files to diagnose deeper hardware issues, then performed board-level repairs using a BGA rework station and hand-soldering.}
-        % \resumeItem{Refurbishment \& Commissions}
-        % {Built and sold dozens of tailored desktop, laptop, and Mac computers to end users at different price points and configurations.}
-        % \resumeItem{Part Refurbishment and Sales}
-        %   {Repaired, tested, and refurbished parts and sold them to PC builders and end users through Jawa's marketplace.}
-      \resumeItemListEnd
+\resumeSubheading
+{Wistron}{Dallas, TX}
+{NVIDIA Server Repair Technician}{05/2024 -- 08/2024}
 
-  \resumeSubHeadingListEnd
-  
+\resumeItemListStart
+\resumeItem{Diagnosed HGX 8-GPU server failures involving FPGAs, power delivery, and signal integrity using proprietary validation tools.}
+\resumeItem{Created Python automation tooling that removed thousands of lines of repetitive database entry, saving 80+ labor hours weekly.}
+\resumeItem{Executed hardware bring-up, repair verification, and subsystem validation under strict throughput and quality targets.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Jawa.gg}{Remote}
+{Verified Seller -- PCs \& Components}{10/2021 -- 08/2023}
+
+\resumeItemListStart
+\resumeItem{Ranked Top 10 platform-wide in seller performance and recognized by CEO Amanda Stefan for contributions to marketplace growth.}
+\resumeItem{Reverse-engineered board-level failures using schematics and BoardView files; completed BGA rework and precision micro-soldering.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+\vspace{-7pt}
+
+% \section{Skills}
+% \small{
+% \textbf{Languages:} C, Java, Python, Rust, MicroPython, Bash \\
+% \textbf{Embedded \& Mobile:} STM32, Arduino, Raspberry Pi Pico, Android, RTOS, HAL, CAN, BLE, MQTT, UART, SPI, I2C, GPIO \\
+% \textbf{Hardware:} PCB Design, Sensor Integration, FPGA Simulation, Bench Testing, Oscilloscopes, Logic Analyzers, Signal Debugging \\
+% \textbf{Software \& Tools:} Linux, Git, PlatformIO, STM32Cube, Quartus, Multisim, OpenSCAD, SolidWorks, Selenium, Proxmox \\
+% \textbf{Additional:} IEC 61131-3 PLCs, ISO 26262 Familiarity, DSP Concepts, RF Systems, HMI Development, Embedded Bring-up
+% }
+\section{Skills}
+
+\small{
+\textbf{Languages:} C, Python, Java, Rust, MicroPython, Bash, Structured Text \\
+\textbf{Embedded/Firmware:} Embedded C, FreeRTOS, STM32, Arduino, Raspberry Pi Pico, ESP8266, HAL, Board Bring-Up \\
+\textbf{Interfaces/Protocols:} I2C, SPI, UART, USB, BLE, MQTT, GPIO, PWM, ADC, DAC, OBD-II \\
+\textbf{Development Tools:} Git/GitHub, PlatformIO, STM32Cube, CMake, Multisim, PLCnext Engineer, Studio5000, Linux \\
+\textbf{Hardware/Testing:} PCB Design, Bench Testing, Oscilloscopes, Logic Analyzers, Embedded Debugging, Signal Analysis, Soldering \\
+\textbf{Concepts:} Agile Development, Continuous Integration, Software Validation, Embedded Operating Systems, Functional Testing, Controller Integration, Troubleshooting, Software Documentation \\
+
+}
+
+\vspace{-6pt}
+
 \section{Relevant Coursework}
-Advanced Embedded Systems | Concurrent Digital Systems | Data Structures \& Algorithms | RF Comms.
-
-%  C Programming (CS159)
-%  DAQ \& Systems Control (ECET177)
-%  Digital Systems (ECET179)
-%  Systems Development (CNIT180)
-%  DC And Pulse Electronics (ECET227)
-%  Concurrent Digital Systems (ECET229)
-%  Wireless Communications (ECET274)
-%  Electronics Prototyping \& Development (ECET270)
-%  Advanced Embedded Digital Systems (ECET329)
-%  Information Technology Architectures (CNIT176)
-%  Industrial Controls (ECET30201)
-
-
+\small{
+Advanced Embedded Digital Systems $|$ Wireless Communications $|$ Concurrent Digital Systems $|$ Industrial Controls \\
+DAQ \& Systems Control $|$ Electronics Prototyping \& Development $|$ DC \& Pulse Electronics $|$ Data Structures \& Algorithms
+}
 \end{document}
